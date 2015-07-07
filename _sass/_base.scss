@@ -98,7 +98,6 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -233,6 +232,10 @@ pre {
   margin-left: -15px;
 }
 
+.text-muted {
+  color: #999999;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -243,6 +246,20 @@ pre {
 ----Navigation Styles---
 ------------------------*/
 
+.active {
+  background-color: #428bca;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #ffffff!important;
+}
+
+.passive {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #000;
+}
+
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:active,
@@ -251,7 +268,7 @@ pre {
     line-height:30px;
     font-weight:normal;
     //color:#fff;
-    //color:#428bca;
+    color:#428bca;
 }
 
 .navbar-brand span {

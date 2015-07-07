@@ -70,8 +70,7 @@ a {
   a:visited {
     color: black; }
   a:hover {
-    color: #111;
-    text-decoration: underline; }
+    color: #111; }
 
 /**
  * Blockquotes
@@ -200,6 +199,9 @@ pre {
   margin-right: -15px;
   margin-left: -15px; }
 
+.text-muted {
+  color: #999999; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -208,13 +210,26 @@ pre {
 /*----------------------
 ----Navigation Styles---
 ------------------------*/
+.active {
+  background-color: #428bca;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #ffffff !important; }
+
+.passive {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #000; }
+
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:active,
 .navbar-brand:focus {
   font-size: 30px;
   line-height: 30px;
-  font-weight: normal; }
+  font-weight: normal;
+  color: #428bca; }
 
 .navbar-brand span {
   font-size: 24px;
