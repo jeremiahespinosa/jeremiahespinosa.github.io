@@ -1,0 +1,18 @@
+Your tagline should be short and snappy, summarizing what you do.
+Things to ask yourself when writing your tagline:
+
+What are you? A designer? A writer? A developer?
+I am an Android Developer.
+
+What do you do? Design websites? Develop games?
+  I love to creating Android applications. My ultimate goal is to create beautiful
+  Android applications with the end user in mind.
+//I love to work on Android applications of all types.
+
+//Whether it be business related or for fun.
+
+Where are you from? Country? City?
+I am from Austin Texas
+
+Are you a freelancer or do you work for a studio? Are you looking for work?
+I graduated from Texas State University with a Bachelors of Science in Computer Science

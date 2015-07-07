@@ -1,0 +1,368 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken(#000, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        cursor:pointer;
+        -webkit-transition:all .5s;
+        transition:all .5s;
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+.icon-vk:hover{fill:#4c75a3}
+.icon-rss:hover{fill:#f99638}
+.icon-site:hover{fill:#ba620b}
+.icon-email:hover{fill:#e34c41}
+.icon-skype:hover{fill:#01aef2}
+.icon-github:hover{fill:#464646}
+.icon-twitter:hover{fill:#1bb2e9}
+.icon-youtube:hover{fill:#cc181e}
+.icon-facebook:hover{fill:#3c599b}
+.icon-pinterest:hover{fill:#ed0103}
+.icon-linkedin:hover{fill:#017eb4}
+.icon-direction:hover{fill:#3a84df}
+.icon-google-plus:hover{fill:#ce352c}
+.icon-stack-overflow:hover{fill:#ef7c02}
+
+.img-circle {
+    border-radius: 50%;
+}
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------------------
+----Navigation Styles---
+------------------------*/
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus {
+    font-size:30px;
+    line-height:30px;
+    font-weight:normal;
+    //color:#fff;
+    //color:#428bca;
+}
+
+.navbar-brand span {
+    font-size:24px;
+    font-weight:300;
+}
+
+#main-nav.scrolled .navbar-brand{
+    color:#21b799;
+}
+
+#main-nav{
+    background:transparent;
+    color:#fff;
+    box-shadow:0 0 0px transparent;
+    -webkit-transition:background 0.3s ease-out;
+    transition:background 0.3s ease-out;
+}
+
+#main-nav.scrolled{
+    background:#fff;
+    border-bottom:1px solid #ddd;
+}
+
+#main-nav.scrolled .navbar-toggle{
+    color:#21b799;
+    border-color:#21b799;
+}
+
+#main-nav.scrolled .navbar-toggle .icon-bar{
+    background:#21b799;
+}
+
+#main-nav .container{
+    padding:30px 20px;
+    -webkit-transition:padding 0.5s ease-out;
+    transition:padding 0.5s ease-out;
+}
+
+#main-nav.scrolled .container{
+    padding:10px 20px;
+}
+
+#main-nav .nav a,
+#main-nav .nav a:active,
+#main-nav .nav a:hover{
+    padding:0px 10px;
+    font-size:18px;
+    line-height:54px;
+    font-weight:400;
+    background:transparent;
+    color:#fff;
+}
+
+
+#main-nav.scrolled .nav a,
+#main-nav.scrolled .nav a:active,
+#main-nav.scrolled .nav a:hover{
+    color:#21b799;
+}
+
+
+#main-nav li{
+    background:transparent;
+    margin:0 10px;
+    border:2px solid transparent;
+}
+
+#main-nav .dropdown-menu a{
+    font-size:14px;
+}
+
+/* Hover Effect */
+#main-nav .nav a {
+    position:relative;
+}
+
+#main-nav .nav a:before {
+	position: absolute;
+	bottom:-5px;
+	left: 50%;
+	color: transparent;
+	content: '•';
+	text-shadow: 0 0 transparent;
+	font-size: 16px;
+	line-height:21px;
+	-webkit-transition: text-shadow 0.3s, color 0.3s;
+	-moz-transition: text-shadow 0.3s, color 0.3s;
+	transition: text-shadow 0.3s, color 0.3s;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+#main-nav .nav a:hover:before,
+#main-nav .nav li.active a:before {
+	color: #fff;
+	text-shadow: 12px 0 #fff, -12px 0 #fff;
+}
+
+#main-nav.scrolled .nav a:hover:before,
+#main-nav.scrolled .nav li.active a:before {
+	color: #21b799;
+	text-shadow: 12px 0 #21b799, -12px 0 #21b799;
+}
+
+.no-textshadow #main-nav .nav a:before {
+	content: '• • •';
+}
+
+.no-csstransforms #main-nav .nav a:before {
+	margin-left:-15px;
+}
