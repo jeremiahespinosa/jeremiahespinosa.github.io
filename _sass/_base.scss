@@ -1,124 +1,124 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/**
- * Basic styling
- */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-}
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+// /**
+//  * Reset some basic elements
+//  */
+// body, h1, h2, h3, h4, h5, h6,
+// p, blockquote, pre, hr,
+// dl, dd, ol, ul, figure {
+//     margin: 0;
+//     padding: 0;
+// }
+//
+//
+//
+// /**
+//  * Basic styling
+//  */
+// body {
+//     font-family: $base-font-family;
+//     font-size: $base-font-size;
+//     line-height: $base-line-height;
+//     font-weight: 300;
+//     color: $text-color;
+//     background-color: $background-color;
+//     -webkit-text-size-adjust: 100%;
+// }
+//
+//
+//
+// /**
+//  * Set `margin-bottom` to maintain vertical rhythm
+//  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
-
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-}
-
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken(#000, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-    }
-}
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
+//
+//
+//
+// /**
+//  * Images
+//  */
+// img {
+//     max-width: 100%;
+//     vertical-align: middle;
+// }
+//
+//
+//
+// /**
+//  * Figures
+//  */
+// figure > img {
+//     display: block;
+// }
+//
+// figcaption {
+//     font-size: $small-font-size;
+// }
+//
+//
+//
+// /**
+//  * Lists
+//  */
+// ul, ol {
+//     margin-left: $spacing-unit;
+// }
+//
+// li {
+//     > ul,
+//     > ol {
+//          margin-bottom: 0;
+//     }
+// }
+//
+//
+//
+// /**
+//  * Headings
+//  */
+// h1, h2, h3, h4, h5, h6 {
+//     font-weight: 300;
+// }
+//
+//
+//
+// /**
+//  * Links
+//  */
+// a {
+//     color: $brand-color;
+//     text-decoration: none;
+//
+//     &:visited {
+//         color: darken(#000, 15%);
+//     }
+//
+//     &:hover {
+//         color: $text-color;
+//     }
+// }
+//
+//
+//
+// /**
+//  * Blockquotes
+//  */
+// blockquote {
+//     color: $grey-color;
+//     border-left: 4px solid $grey-color-light;
+//     padding-left: $spacing-unit / 2;
+//     font-size: 18px;
+//     letter-spacing: -1px;
+//     font-style: italic;
+//
+//     > :last-child {
+//         margin-bottom: 0;
+//     }
+// }
+//
 
 
 /**
@@ -246,34 +246,26 @@ pre {
 ----Navigation Styles---
 ------------------------*/
 
-.active {
-  background-color: #428bca;
-  border-radius: 5px;
-  padding: 10px 15px;
-  color: #ffffff!important;
-}
+// .active {
+//   background-color: #428bca;
+//   border-radius: 5px;
+//   padding: 10px 15px;
+//   color: #ffffff!important;
+// }
+//
+// .passive {
+//   background-color: #fff;
+//   border-radius: 5px;
+//   padding: 10px 15px;
+//   color: #000;
+// }
 
-.passive {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 10px 15px;
-  color: #000;
-}
-
-.navbar-brand,
-.navbar-brand:hover,
-.navbar-brand:active,
-.navbar-brand:focus {
+.navbar-brand{
     font-size:30px;
     line-height:30px;
     font-weight:normal;
     //color:#fff;
     color:#428bca;
-}
-
-.navbar-brand span {
-    font-size:24px;
-    font-weight:300;
 }
 
 #main-nav.scrolled .navbar-brand{
